@@ -1,0 +1,67 @@
+@import url(base.css);
+
+body {
+    grid-template-rows: 10vh 10vh 3fr 1fr 5vh;
+    grid-template-areas: "date nav time"
+        "title title title"
+        "ct intro st"
+        "socials socials socials"
+        "footer footer footer";
+}
+
+#intro {
+    font-size: 1.8em;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    border: solid 5px rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    background-image: linear-gradient(to bottom right, rgba(255, 255, 255, .4), rgba(120, 120, 120, .4));
+    grid-area: intro;
+    padding: 5%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+#intro a {
+    color: white;
+    text-decoration: none;
+    background: rgba(50, 50, 50, 0.4);
+    padding: .5%;
+    border-radius: 20px;
+    border: solid 2px rgba(255, 255, 255, 0);
+    backdrop-filter: blur(4px);
+    transition: .3s;
+    margin-top: 1em;
+}
+
+
+#intro a:hover {
+    border: solid 2px rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+#socials {
+    text-align: center;
+    margin: auto;
+    grid-area: socials;
+}
+
+#socials a {
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+}
+
+#socials img {
+    width: 4%;
+    height: 4%;
+    transition: .3s;
+}
+
+#socials img:hover {
+    width: 5%;
+    height: 5%;
+}

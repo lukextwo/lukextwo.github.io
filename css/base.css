@@ -1,0 +1,102 @@
+@charset "utf-8";
+
+@keyframes borderspin {
+    0% {
+        border-top: 5px solid rgba(255, 255, 255, 0);
+        border-right: 5px solid rgba(255, 255, 255, 0);
+        border-bottom: 5px solid rgba(255, 255, 255, 0);
+        border-left: 5px solid rgba(255, 255, 255, 0);
+    }
+
+    25% {
+        border-top: 5px solid rgba(100, 100, 100, 0.5);
+        border-right: 5px solid rgba(255, 255, 255, 0);
+        border-bottom: 5px solid rgba(255, 255, 255, 0);
+        border-left: 5px solid rgba(255, 255, 255, 0);
+    }
+
+    50% {
+        border-top: 5px solid rgba(100, 100, 100, 0.5);
+        border-right: 5px solid rgba(100, 100, 100, 0.5);
+        border-bottom: 5px solid rgba(255, 255, 255, 0);
+        border-left: 5px solid rgba(255, 255, 255, 0);
+    }
+
+    75% {
+        border-top: 5px solid rgba(100, 100, 100, 0.5);
+        border-right: 5px solid rgba(100, 100, 100, 0.5);
+        border-bottom: 5px solid rgba(100, 100, 100, 0.5);
+        border-left: 5px solid rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        border-top: 5px solid rgba(100, 100, 100, 0.5);
+        border-right: 5px solid rgba(100, 100, 100, 0.5);
+        border-bottom: 5px solid rgba(100, 100, 100, 0.5);
+        border-left: 5px solid rgba(100, 100, 100, 0.5);
+    }
+}
+
+body {
+    display: grid;
+    grid-template-rows: 10vh 10vh 10vh 3fr 1fr 5vh;
+    grid-template-columns: 1fr 4fr 1fr;
+    font-family: Arial, sans-serif;
+    color: white;
+    background: url(../images/black5.JPG) center / cover fixed;
+    margin: 0;
+    min-height: 100vh;
+    width: 100%;
+}
+
+#title {
+    font-size: 3em;
+    text-decoration: none;
+    grid-area: title;
+    margin: auto;
+}
+
+#date {
+    text-align: left;
+    font-size: 1.5em;
+    grid-area: date;
+}
+
+#time {
+    text-align: right;
+    font-size: 1.5em;
+    grid-area: time;
+}
+
+#mainnav {
+    text-align: center;
+    font-size: 2em;
+    grid-area: nav;
+    margin: auto;
+    width: 100%;
+}
+
+#mainnav a {
+    color: white;
+    text-decoration: none;
+    background: rgba(0, 0, 0, 0.3);
+    padding: .7%;
+    border-radius: 25px;
+    border: solid 2px rgba(255, 255, 255, .2);
+    backdrop-filter: blur(4px);
+    transition: .3s;
+
+}
+
+#mainnav a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    border: solid 2px rgba(255, 255, 255, 1);
+}
+
+footer {
+    text-align: center;
+    font-size: .75em;
+    grid-area: footer;
+    margin: auto;
+}
+
